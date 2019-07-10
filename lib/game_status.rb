@@ -17,7 +17,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win|
-  #  returns an array of matching indexes for a win
   if win.all?{|y| board[y] == "X"}
     return win
     elsif win.all?{|y| board[y] == "O"}
